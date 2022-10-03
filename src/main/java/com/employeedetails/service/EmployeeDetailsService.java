@@ -15,7 +15,7 @@ public class EmployeeDetailsService {
 	@Autowired
 	EmployeeDetailsRepository employeeDetailsRepository;
 
-	public List<EmployeeDetails> getAllEmployee() {
+	public List<EmployeeDetails> getAllEmployeeDetails() {
 		return employeeDetailsRepository.findAll();
 	}
 
@@ -27,7 +27,7 @@ public class EmployeeDetailsService {
 		return employeeDetailsRepository.findById(employee_details_code).get();
 	}
 
-	public void delete(int employee_details_code) {
+	public void deleteEmployeeDetails(int employee_details_code) {
 		employeeDetailsRepository.deleteById(employee_details_code);
 	}
 
